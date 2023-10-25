@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include "saida.h"
+
+extern int registradores[32];
+
+void imprimir(char instrucao[], char operador[]){
+    int rx;
+    int RX;
+    sscanf(operador+1, "%d", &rx);
+    RX = registradores[rx];
+    printf("%d\n",RX);
+
+}
