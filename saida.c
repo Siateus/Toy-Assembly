@@ -3,7 +3,7 @@
 
 extern int registradores[32];
 
-void imprimir(char instrucao[], char operador[]){
+void imprimir( char operador[]){
     int rx;
     int RX;
     sscanf(operador+1, "%d", &rx);
