@@ -11,8 +11,7 @@ void ler_matriz(int n, char matriz[100][17]) {
 
 void ler_dados(){
     int n;
-    scanf("%d ",&n);
+    scanf("%d",&n);
     char matriz[100][17];
     ler_matriz(n, matriz);
-
 }
