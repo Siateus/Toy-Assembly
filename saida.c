@@ -8,6 +8,6 @@ void imprimir( char operador[]){
     int RX;
     sscanf(operador+1, "%d", &rx);
     RX = registradores[rx];
-    printf("%d\n",RX);
+    printf("\n%d",RX);
 
 }

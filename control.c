@@ -5,6 +5,8 @@
 #include "logica.h"
 #include "saida.h"
 #include <string.h>
+#include <stdlib.h>
+
 #define TAM 12
 
 extern int registradores[32]; // Um array externo para a registradores com 32 elementos.
@@ -34,8 +36,8 @@ void controle(char matriz[100][17], int n) {
     char instrucoes[8];
     char destino[TAM], operador[TAM], operador_2[TAM];
 
+    // Cada iteração do loop processa uma instrução da matriz.
     for (int i = 0; i < n; ) {
-        // Cada iteração do loop processa uma instrução da matriz.
 
         if (strncmp(matriz[i], "MOV", 3) == 0 ){
             //Se a instrução é "MOV", realiza uma movimentação de valor.
@@ -67,7 +69,7 @@ void controle(char matriz[100][17], int n) {
                 // Se a instrução é "BEQ" ou "BLT", realiza um salto condicional com base na resposta da função logica.
                 sscanf(matriz[i], "%s%s%s%d", instrucoes, operador, operador_2, &indice);
                 resposta = logica(instrucoes, operador, operador_2);
-                i = (resposta == 0) ? indice-1 : i; // Comentário: Pula para o índice se a resposta for falsa (0).
+                i = (resposta == 1) ? indice-1 : i; // Comentário: Pula para o índice se a resposta for falsa (0).
             }
         }
 
@@ -77,9 +79,12 @@ void controle(char matriz[100][17], int n) {
             imprimir(operador);
         }
 
-        else if(strncmp(matriz[i], "EXIT", 4) == 0 || count == 100000){
-            // Se a instrução é "EXIT" ou se atingimos um limite de execuções, encerra o loop.
-            break;
+        else if(strncmp(matriz[i], "EXIT", 4) == 0 ){
+            // Se a instrução é "EXIT".
+            exit(0);
+        }
+        if(count==100000){
+            exit(0); // Se atingimos um limite de execuções, encerra o loop.
         }
         count++;
         i++;

@@ -14,17 +14,17 @@ void ram(char instrucoes[], char memoria[], char operador[]){
         int ry, rx, RY;
         sscanf(memoria+1,"%d",&rx);
         sscanf(operador+1,"%d",&RY);
-        ry = registradores[RY];
-        registradores[rx] = MEMORIA[ry];
+        ry = registradores[RY]; // Lê o valor do registrador correspondente ao índice "valor" e armazena em "ry".
+        registradores[rx] = MEMORIA[ry];// Lê o valor da memória no endereço "ry" e armazena no registrador com o índice "rx".
     }
-    if((strcmp(instrucoes, "STORE") == 0)){
+    else if((strcmp(instrucoes, "STORE") == 0)){
         int rx, ry;
         int valor, endereco;
         sscanf(memoria+1,"%d",&valor);
         sscanf(operador+1,"%d",&endereco);
-        rx = registradores[valor];
-        ry = registradores[endereco];
-        MEMORIA[ry] = rx;
+        rx = registradores[valor]; // Lê o valor do registrador correspondente ao índice "valor" e armazena em "rx".
+        ry = registradores[endereco]; // Lê o valor do registrador correspondente ao índice "endereco" e armazena em "ry".
+        MEMORIA[ry] = rx; // Armazena o valor de "rx" na memória no endereço especificado por "ry".
     }
 }
 

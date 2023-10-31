@@ -5,7 +5,6 @@
 void ler_matriz(int n, char matriz[100][17]) {
     for(int i = 0; i < n; i++){
         fgets(matriz[i],17,stdin);
-        printf("Linha %d: %s",i,matriz[i]);
     }
     controle(matriz,n);
 }
