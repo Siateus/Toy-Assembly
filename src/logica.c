@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "logica.h"
+#include "../include/logica.h"
 
 extern int registradores[32]; // Um array externo para a registradores com 32 elementos.
 

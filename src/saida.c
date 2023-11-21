@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "saida.h"
+#include "../include/saida.h"
 
 extern int registradores[32]; // Um array externo para a registradores com 32 elementos.
 
@@ -8,6 +8,6 @@ void imprimir( char operador[]){
     int RX;
     sscanf(operador+1, "%d", &rx);
     RX = registradores[rx];
-    printf("\n%d",RX);
+    printf("%d\n",RX);
 
 }

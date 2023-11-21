@@ -1,6 +1,6 @@
 #include <string.h>
 #include <stdio.h>
-#include "memoria.h"
+#include "../include/memoria.h"
 extern int MEMORIA[1000]; // Um array externo para a memória com 1000 elementos.
 extern int registradores[32]; // Um array externo para a registradores com 32 elementos.
 

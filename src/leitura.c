@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include "leitura.h"
-#include "control.h"
+#include "../include/leitura.h"
+#include "../include/control.h"
 
 void ler_matriz(int n, char matriz[100][17]) {
     for(int i = 0; i < n; i++){

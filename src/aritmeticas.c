@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h> // Para strcmp
-#include "aritmeticas.h"
+#include "../include/aritmeticas.h"
 
 extern int registradores[32];
 

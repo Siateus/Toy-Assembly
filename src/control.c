@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include "control.h"
-#include "aritmeticas.h"
-#include "memoria.h"
-#include "logica.h"
-#include "saida.h"
+#include "../include/control.h"
+#include "../include/aritmeticas.h"
+#include "../include/memoria.h"
+#include "../include/logica.h"
+#include "../include/saida.h"
 #include <string.h>
 #include <stdlib.h>
 
