@@ -1,0 +1,3 @@
+/cygdrive/c/Users/tecma/OneDrive/Documentos/Projetos/Projeto02PC1/build/CMakeFiles/Projeto02PC1.dir
+/cygdrive/c/Users/tecma/OneDrive/Documentos/Projetos/Projeto02PC1/build/CMakeFiles/edit_cache.dir
+/cygdrive/c/Users/tecma/OneDrive/Documentos/Projetos/Projeto02PC1/build/CMakeFiles/rebuild_cache.dir

@@ -7,7 +7,7 @@ BUILD_DIR = build
 SRCS = $(wildcard $(SRC_DIR)/*.c)
 OBJS = $(patsubst $(SRC_DIR)/%.c,$(BUILD_DIR)/%.o,$(SRCS))
 
-PROG = Projeto02PC1
+PROG = main
 
 all: $(BUILD_DIR) $(PROG)
 

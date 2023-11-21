@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdbool.h>
-#include "logica.h"
+#include "../include/logica.h"
 
 extern int registradores[32]; // Um array externo para a registradores com 32 elementos.
 
@@ -16,7 +16,7 @@ int logica(char instrucoes[], char operador[], char operador_2[]){
         sscanf(operador_2, "R%d", &ry);
         RY = registradores[ry];
         RX = registradores[rx];
-        comparacao = (RX == RY) ? 0 : 1; // Compara RX e RY, retorna 0 se igual, 1 se diferente.
+        comparacao = (RX == RY) ? 1 : 0; // Compara RX e RY, retorna 0 se igual, 1 se diferente.
         return comparacao; // Retorna o resultado da comparação.
     }
 
@@ -25,7 +25,7 @@ int logica(char instrucoes[], char operador[], char operador_2[]){
         sscanf(operador_2 + 1, "%d", &ry);
         RX = registradores[rx];
         RY = registradores[ry];
-        comparacao = (RX < RY) ? 0 : 1; // Compara RX e RY, retorna 0 se RX < RY, 1 caso contrário.
+        comparacao = (RX < RY) ? 1 : 0; // Compara RX e RY, retorna 0 se RX < RY, 1 caso contrário.
         return comparacao; // Retorna o resultado da comparação.
     }
 }
