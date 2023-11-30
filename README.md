@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este projeto visa a construção de um interpretador para uma linguagem de programação assembly simples, denominada "Toy Assembly". Essa linguagem de programação é de baixo nível, operando em um nível de abstração próximo à arquitetura da máquina, e permite a execução de programas escritos em instruções específicas.
+Este Programa visa a construção de um interpretador para uma linguagem de programação assembly simples, denominada "Toy Assembly". Essa linguagem de programação é de baixo nível, operando em um nível de abstração próximo à arquitetura da máquina, e permite a execução de programas escritos em instruções específicas.
 
 ## Especificação
 
