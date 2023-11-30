@@ -40,7 +40,7 @@ Para compilar e executar o interpretador Toy Assembly, siga as etapas a seguir:
 
 4. Abra um terminal e navegue até o diretório onde estão os arquivos de código-fonte e o Makefile.
 
-5. Compile o programa usando o Makefile executando o seguinte comando:
+5. Compile o programa usando o Makefile executando o seguinte comando: `make`
 
 
 Isso vai compilar os arquivos fonte e gerar o executável conforme definido no Makefile.
