@@ -50,7 +50,7 @@ Isso vai compilar os arquivos fonte e gerar o executável conforme definido no M
 
 - Quando o programa terminar de executar ou encontrar a instrução `EXIT`, ele encerrará a execução.
 
-10. Se necessário, você pode executar o comando `make clean` para remover os arquivos gerados durante a compilação.
+- Se necessário, você pode executar o comando `make clean` para remover os arquivos gerados durante a compilação.
 
 
 ---
